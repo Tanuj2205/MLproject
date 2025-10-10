@@ -23,6 +23,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         try:
             ##reading the data from mysql
+            df = pd.read_csv(os.path.join('C:/Users/tanuj/OneDrive/Desktop/MLproject/notebook/data', 'raw.csv'))
             df=read_sql_data()
             logging.info("Reading completed mysql database")
 
